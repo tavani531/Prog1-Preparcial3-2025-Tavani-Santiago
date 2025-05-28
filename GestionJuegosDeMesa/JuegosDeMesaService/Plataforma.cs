@@ -47,7 +47,7 @@ namespace JuegosDeMesaService
             {
                 return (false, "Producto no encontrado.");
             }
-            if (producto.FechaLimiteComercializacion < DateTime.Now)
+            if (producto.FechaLimiteComercializacion < DateTime.Today)
             {
                 return (false, "Producto no disponible por fecha.");
             }
@@ -55,7 +55,7 @@ namespace JuegosDeMesaService
             {
                 Codigo = contVentas,
                 MontoTotal = producto.PrecioBase,
-                FechaPago = DateTime.Now
+                FechaPago = DateTime.Today
             };
             Ventas venta = new Ventas
             {

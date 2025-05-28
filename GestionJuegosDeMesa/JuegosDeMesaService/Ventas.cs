@@ -14,12 +14,12 @@ namespace JuegosDeMesaService
         public string ProductoVendido { get; set; }
         public Pago Pago { get; set; }
 
-        public Ventas(DateTime fechaVenta, string nombreCliente, string productoVendido, Pago pago)
+        /*public Ventas(DateTime fechaVenta, string nombreCliente, string productoVendido, Pago pago)
         {
             FechaVenta = fechaVenta;
             NombreCliente = nombreCliente;
             ProductoVendido = productoVendido;
             Pago = pago;
-        }
+        }*/
     }
 }
